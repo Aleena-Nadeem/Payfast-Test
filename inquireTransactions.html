@@ -1,0 +1,90 @@
+<head>
+	<title>PayFast Payment</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			color: #0d6efd;
+			text-align: center;
+			margin-top: 50px;
+		}
+		h2 {
+			color: #0d6efd;
+			text-align: center;
+			margin-top: 20px;
+		}
+		form {
+			width: 50%;
+			margin: 50px auto;
+			background-color: white;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		label {
+			color: #0d6efd;
+			font-size: 16px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: left;
+			width: 80%;
+		}
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 4px;
+			background-color: #f2f2f2;
+		}
+		button[type=submit] {
+			background-color: #0d6efd;
+			color: white;
+			padding: 14px 20px;
+			margin: 30px 0 10px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 50%;
+			font-size: 18px;
+			font-weight: bold;
+			transition: all 0.3s ease-in-out;
+		}
+		button[type=submit]:hover {
+			background-color: #007bff;
+		}
+		select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+	</style>
+</head>
+<body>
+	<h1>PayFast Payment</h1>
+	<h2>We make it easier for you</h2>
+
+<form action="http://localhost:3000/transaction-report" method="get">
+  
+	<label for="transaction_id">Transaction ID:</label>
+	<input type="text" id="transaction_id" name="transaction_id"><br><br>
+  
+	<label for="mobile_no">Mobile Number:</label>
+	<input type="text" id="mobile_no" name="mobile_no"><br><br>
+  
+	<button type="submit">Submit</button>
+
+  </form>
+
+  </body>
